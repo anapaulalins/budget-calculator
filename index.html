@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21875b1641.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Dashboard</h2>
+            <div class="account">
+                <div class="balance acc">
+                    <h3>Balance</h3>
+                    <div class="cont">
+                        <p class="balance-value">$0</p>
+                        <i class="fas fa-money-check-alt fa-lg"></i>
+                    </div>
+                </div>
+                <div class="income acc">
+                    <h3>Income</h3>
+                    <div class="cont">
+                        <p class="income-value">$0</p>
+                        <i class="fas fa-arrow-alt-circle-up fa-lg"></i>
+                    </div>
+                </div>
+                <div class="outcome acc">
+                    <h3>Outcome</h3>
+                    <div class="cont">
+                        <p class="outcome-value">$0</p>
+                        <i class="fas fa-arrow-alt-circle-down fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-two">
+        <div class="content-two">
+            <div class="btns">
+                <div class="outcome-btn btn">Despesas</div>
+                <div class="income-btn btn active">Deposito</div>
+                <div class="all-btn btn">Tudo</div>
+            </div>
+            <div class="account-details">
+                <div class="income-datails ">
+                    <div class="income-list list"></div>
+                    <div class="input-income input">
+                        <form action="" class="income-form">
+                            <input type="text" placeholder="title" class="input-income-title title-input">
+                            <input type="number" placeholder="valor" step=".01" class="input-income-value value-input">
+                            <button><i class="fas fa-plus-square fa-2x income-btn-add"></i></button>
+                        </form>
+                        <div class="err-income err hide">
+                            <p>Digite corretamente o capo a cima!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="expenses-details hide">
+                    <div class="expense-list list"></div>
+                    <div class="input-expense input">
+                        <form action="" class="expense-form">
+                            <input type="text" placeholder="title" class="input-expense-title title-input">
+                            <input type="number" placeholder="valor" step=".01" class="input-expense-value value-input">
+                            <button><i class="fas fa-plus-square fa-2x expense-btn-add"></i></button>
+                        </form>
+                        <div class="err-expense err hide">
+                            <p>Digite corretamente o capo a cima!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all-details hide">
+                    <div class="all-list list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
