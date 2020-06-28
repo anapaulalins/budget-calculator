@@ -89,11 +89,9 @@ function createElementAll() {
         const li = document.createElement('li')
         li.dataset.listId = element.id
         li.innerHTML = createBody(element)
-        if (element.type === 'income') {
-            li.style.color = '#008000'
-        } else {
-            li.style.color = '#FF0000'
-        }
+
+        element.type === 'income' ? li.style.color = '#008000' : li.style.color = '#FF0000'
+
         allList.appendChild(li)
     })
 }
@@ -233,18 +231,6 @@ function clearInput(elements) {
         element.value = null
     })
 }
-
-
-const n = new Date
-
-setTimeout(() => {
-    localStorage.removeItem(local_storage_all)
-    console.log('ok', n)
-    incomeList.style.display = 'none'
-    incomeValue.innerHTML = `$${0}`
-    outcomeValue.innerHTML = `$${0}`
-    balanceValue.innerHTML = `$${0}`
-}, (3600000 * 24));
 
 cal()
 createElementAll()
