@@ -110,7 +110,7 @@ function createBody(element) {
     </div>
     </div>
     <div class=" time">
-    <p>${element.ano} - ${element.time}</p>
+    <p>${element.day} ${element.month} ${element.year} ou ${element.ano} - ${element.time}</p>
     </div>`
 }
 
@@ -177,8 +177,7 @@ function createObj(type, name, value) {
         ano: now.toLocaleDateString()
     }
 }
-const now = new Date
-console.log(now.toLocaleDateString())
+
 
 btnIncome.addEventListener('click', () => {
     active(btnIncome)
