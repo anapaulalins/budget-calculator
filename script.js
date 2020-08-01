@@ -177,7 +177,8 @@ function createObj(type, name, value) {
         ano: now.toLocaleDateString()
     }
 }
-
+const now = new Date
+console.log(now.toLocaleDateString())
 
 btnIncome.addEventListener('click', () => {
     active(btnIncome)
