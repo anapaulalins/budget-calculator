@@ -110,7 +110,7 @@ function createBody(element) {
     </div>
     </div>
     <div class=" time">
-    <p>${element.day} ${element.month} ${element.year} ou ${element.ano} - ${element.time}</p>
+    <p>${element.day} ${element.month} ${element.year} - ${element.time}</p>
     </div>`
 }
 
@@ -173,8 +173,7 @@ function createObj(type, name, value) {
         day: now.getDate(),
         month: monName[now.getMonth()],
         year: now.getFullYear(),
-        time: now.toLocaleTimeString(),
-        ano: now.toLocaleDateString()
+        time: now.toLocaleTimeString()
     }
 }
 
